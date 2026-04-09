@@ -41,7 +41,6 @@ ul {
 
 .header .container {
   font-size: 0;
-  text-align: justify;
 }
 
 .logo,
@@ -63,7 +62,7 @@ ul {
 }
 
 .nav {
-  width: 60%;
+  width: 55%;
   text-align: center;
 }
 
@@ -77,7 +76,7 @@ ul {
 .menu-link {
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .menu-link:hover {
@@ -93,7 +92,7 @@ ul {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 3px;
   background-color: var(--primary-color);
@@ -102,6 +101,7 @@ ul {
 .login-btn {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 100px;
 
   padding: 8px 18px;
   background-color: var(--primary-color);
