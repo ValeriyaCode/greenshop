@@ -512,6 +512,6 @@ ul {
   color: var(--text-color);
 }
 
-.blog-content a.active {
+.blog-card a:hover {
   color: var(--primary-color);
 }
