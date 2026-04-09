@@ -273,7 +273,7 @@ ul {
   padding: 0;
   margin: 0;
   font-size: 15px;
-  font-weight: 400px;
+  font-weight: 400;
   color: var(--light-text);
   cursor: pointer;
 }
@@ -294,7 +294,7 @@ ul {
 
 .sort-label {
   font-size: 15px;
-  font-weight: 400px;
+  font-weight: 400;
   color: var(--light-text);
 }
 
@@ -350,7 +350,7 @@ ul {
 .card-title {
   margin: 10px 0;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -399,4 +399,119 @@ ul {
 .page.next img {
   width: 12px;
   height: 12px;
+}
+
+/* PROMO */
+.promo {
+  padding: 60px 0;
+}
+
+.promo-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.promo-card {
+  position: relative;
+  flex: 1;
+  background: var(--card-bg);
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.promo-card img {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 260px;
+}
+
+.promo-content {
+  max-width: 300px;
+  text-align: right;
+}
+
+.promo-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.promo-content p {
+  font-size: 14px;
+  color: var(--light-text);
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+/* BLOG */
+.blog {
+  padding: 60px 0;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.blog-subtitle {
+  text-align: center;
+  color: var(--light-text);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.blog-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.blog-card {
+  flex: 1;
+  background: var(--card-bg);
+}
+
+.blog-card img {
+  width: 100%;
+  display: block;
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-meta {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.blog-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.blog-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-text);
+  margin-bottom: 10px;
+}
+
+.blog-card a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.blog-content a.active {
+  color: var(--primary-color);
 }
