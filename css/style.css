@@ -40,7 +40,13 @@ ul {
 }
 
 .header .container {
-  font-size: 0;
+  text-align: center;
+}
+
+.header .container::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .logo,
@@ -48,22 +54,26 @@ ul {
 .login-btn {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
 }
 
 .logo {
-  width: 20%;
+  float: left;
 }
+
+.login-btn {
+  float: right;
+}
+
+.nav {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------- */
 
 .logo img {
   display: block;
   height: 34px;
   width: auto;
-}
-
-.nav {
-  width: 55%;
-  text-align: center;
 }
 
 .menu-item {
@@ -101,7 +111,6 @@ ul {
 .login-btn {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 100px;
 
   padding: 8px 18px;
   background-color: var(--primary-color);
