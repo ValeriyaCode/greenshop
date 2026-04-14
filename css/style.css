@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #46a358;
+  --menu-color: #edf3ef;
   --text-color: #3d3d3d;
   --light-text: #727272;
   --bg-color: #ffffff;
@@ -79,37 +80,105 @@ ul {
   width: auto;
 }
 
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
 .menu-item {
-  font-size: 16px;
-  font-weight: 400;
-  display: inline-block;
-  margin-right: 30px;
+  position: relative;
 }
 
 .menu-link {
   position: relative;
-  display: inline-block;
   padding-bottom: 15px;
+  text-decoration: none;
+  color: #3d3d3d;
 }
 
-.menu-link:hover {
-  color: var(--primary-color);
-}
-
-.menu-link.active {
-  color: var(--text-color);
-  font-weight: 600;
-}
-
-.menu-link.active::after {
+.menu-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   width: 100%;
-  height: 3px;
-  background-color: var(--primary-color);
+  height: 2px;
+  background: var(--primary-color);
+  opacity: 0;
 }
+
+.menu-item:hover > .menu-link::after {
+  opacity: 1;
+}
+
+/* БАГАТОРІВНЕНЕ МЕНЮ ТУТ */
+/* -------------------------------------------------------------------- */
+
+.child {
+  position: absolute;
+  top: calc(100% + 17px);
+  left: 0;
+
+  background: var(--menu-color);
+  min-width: 180px;
+
+  display: none;
+}
+
+.parent:hover > .child {
+  display: block;
+}
+
+.child li {
+  position: relative;
+}
+
+.child li a {
+  display: block;
+  padding: 12px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: left;
+}
+
+.child li:hover {
+  background: var(--primary-color);
+}
+
+.child li:hover > a {
+  color: #fff;
+}
+
+.child li.parent > a::after {
+  content: "›";
+  position: absolute;
+  right: 15px;
+
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.child li.parent:hover > a::after {
+  opacity: 1;
+  color: #fff;
+}
+
+.child.second {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 2px);
+
+  background: var(--menu-color);
+  min-width: 180px;
+
+  display: none;
+}
+
+.child li.parent:hover > .child.second {
+  display: block;
+}
+
+/* -------------------------------------------------------------------- */
 
 .login-btn {
   display: inline-block;
