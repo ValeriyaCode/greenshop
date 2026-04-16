@@ -784,6 +784,7 @@ ul {
 }
 
 .footer-wrapper {
+  padding-top: 30px;
   display: flex;
   gap: 40px;
 }
