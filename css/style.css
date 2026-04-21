@@ -50,17 +50,16 @@ h2 {
 .costom-form {
   padding: 1.5rem;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border-radius: 1rem;
   position: relative;
-  /* background-color: rgb(240, 240, 240); */
-  /* box-shadow: 0 0 15px rgba(240, 240, 240, 0.5); */
+
+  background-color: #f0f0f0;
+  box-shadow: none;
 }
 
 .costom-form::before {
-  content: '';
-  display: block;
+  content: "";
   width: 90%;
   height: 2rem;
   position: absolute;
@@ -68,22 +67,21 @@ h2 {
   top: calc(100% - 1rem);
   border-radius: 1rem;
   z-index: -1;
-  /* background-color: rgb(230, 230, 230); */
-  /* box-shadow: 0 0 15px rgba(230, 230, 230, 0.5); */
+
+  background-color: #e6e6e6;
 }
 
 .costom-form::after {
-  content: '';
-  /* : ; */
+  content: "";
   width: 80%;
   height: 2rem;
   position: absolute;
   left: 10%;
-  top: calc(100%);
+  top: 100%;
   border-radius: 1rem;
   z-index: -2;
-  /* background-color: rgb(220, 220, 220); */
-  /* box-shadow: 0 0 15px rgba(220, 220, 220, 0.5); */
+
+  background-color: #dcdcdc;
 }
 
 .costom-form .fieldset {
@@ -96,7 +94,7 @@ h2 {
   cursor: pointer;
 }
 
-.radio-group input[type='radio'] {
+.radio-group input[type="radio"] {
   width: 0;
   height: 0;
   opacity: 0;
@@ -107,13 +105,16 @@ h2 {
   display: inline-block;
   width: 20px;
   height: 20px;
-  /* background: url(); */
-  /* opacity: 0; */
-  transition: all 0.2s linear;
+
+  background: url("../images/arrow.png") center/contain no-repeat;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.2s;
 }
 
-.radio-group input[type='radio']:checked + .pseudo {
-  /* : 1; */
+.radio-group input:checked + .pseudo {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .checkbox-group {
@@ -124,7 +125,7 @@ h2 {
   margin-right: 0.5rem;
 }
 
-.checkbox-group input[type='checkbox'] {
+.checkbox-group input[type="checkbox"] {
   width: 0;
   height: 0;
   opacity: 0;
@@ -132,65 +133,63 @@ h2 {
 }
 
 .checkbox-group.type-1 .pseudo {
-  display: inline-block;
   width: 20px;
   height: 20px;
-  /* background: url(); */
+  background: url("../images/check.png") center/contain no-repeat;
+
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: 0.2s;
 }
 
-.checkbox-group.type-1 input[type='checkbox']:checked + .pseudo {
+.checkbox-group.type-1 input:checked + .pseudo {
   opacity: 1;
 }
 
 .checkbox-group.type-2 .pseudo {
-  display: inline-block;
   position: relative;
   width: 20px;
   height: 12px;
-  transition: all 0.2s linear;
-  border-radius: 6px;
-  /* background-color: red; */
+  border-radius: 7px;
+  background-color: #ccc;
+  transition: 0.3s;
 }
+
 .checkbox-group.type-2 .pseudo::before {
-  content: '';
-  display: inline-block;
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
   top: 1px;
   left: 1px;
-  transition: all 0.2s linear;
-  /* border-radius: 50%; */
   background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
-.checkbox-group.type-2 input[type='checkbox']:checked + .pseudo {
-  /* background-color: ; */
+.checkbox-group.type-2 input:checked + .pseudo {
+  background-color: green;
 }
 
-.checkbox-group.type-2 input[type='checkbox']:checked + .pseudo::before {
-  left: 8px;
+.checkbox-group.type-2 input:checked + .pseudo::before {
+  left: 10px;
 }
 
 .checkbox-group.type-3 .pseudo {
-  display: inline-block;
-  position: relative;
   width: 20px;
   height: 20px;
-  transition: all 0.2s linear;
   border-radius: 50%;
-  /* background: url() no ce/co; */
+  background: url("../images/toggler.png") center/contain no-repeat;
+  opacity: 0.4;
+  transition: 0.2s;
 }
 
-.checkbox-group.type-3 input[type='checkbox']:checked + .pseudo {
-  /* background-color: green; */
-  /* box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); */
+.checkbox-group.type-3 input:checked + .pseudo {
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 .checkbox-group.type-3 .pseudo::before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -199,20 +198,20 @@ h2 {
 }
 
 .btn {
-  display: inline-block;
   min-width: 150px;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     90deg,
     rgb(61, 255, 61) 0%,
     rgb(13, 155, 0) 50%,
     rgb(61, 255, 61) 100%
-  ); */
+  );
+
   background-size: 200%;
   background-position: 0 0;
-  transition: all 0.2s linear;
+  transition: all 0.3s;
+
   border: none;
   padding: 0.5rem 1.5rem;
-  font-size: 1rem;
   border-radius: 0.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -220,4 +219,5 @@ h2 {
 
 .btn:hover {
   background-position: 100% 0;
+  transform: scale(1.05);
 }
