@@ -78,10 +78,29 @@
                 </ul>
             </nav>
 
-            <button type="button" class="login-btn">
-                <img src="images/header/logout.png" alt="Login icon">
-                <span>Login</span>
-            </button>
+            <div class="header-right">
+
+                <div class="header-icons">
+
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="#search"></use>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="cart">
+                        <svg class="icon">
+                            <use href="#cart"></use>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <button type="button" class="login-btn">
+                    <span>Login</span>
+                </button>
+
+            </div>
 
         </div>
     </header>
@@ -130,6 +149,28 @@
                                 <li>Terrariums</li>
                                 <li>Gardening</li>
                                 <li>Accessories</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-range">
+                            <h3 class="sidebar-title">Price Range</h3>
+
+                            <input type="range" class="range">
+
+                            <p class="price-text">
+                                Price: <span>$39 - $1230</span>
+                            </p>
+
+                            <button class="filter-btn">Filter</button>
+                        </div>
+
+                        <div class="size">
+                            <h3 class="sidebar-title">Size</h3>
+
+                            <ul class="size-list">
+                                <li>Small <span>(119)</span></li>
+                                <li>Medium <span>(86)</span></li>
+                                <li>Large <span>(78)</span></li>
                             </ul>
                         </div>
 
@@ -446,6 +487,23 @@
 
         </footer>
     </main>
+
+    <!-- SVG іконки -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <!-- SEARCH -->
+        <symbol id="search" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" stroke="currentColor"
+                stroke-width="1.5" fill="none" />
+        </symbol>
+
+        <!-- CART -->
+        <symbol id="cart" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"
+                stroke="currentColor" stroke-width="1.5" fill="none" />
+        </symbol>
+    </svg>
 
 </body>
 

@@ -45,32 +45,36 @@ ul {
 }
 
 .header .container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header .container::after {
-  content: "";
-  display: block;
-  clear: both;
+/* ДОДАЛА ІКОНКИ В НАВБАР */
+/* -------------------------------------------------------------------- */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.logo,
-.nav,
-.login-btn {
-  display: inline-block;
-  vertical-align: middle;
+.header-icons {
+  display: flex;
+  gap: 20px;
 }
 
-.logo {
-  float: left;
+.icon {
+  width: 25px;
+  height: 25px;
+  color: var(--text-color);
+  stroke: currentColor;
+  transition: 0.2s;
 }
 
-.login-btn {
-  float: right;
-}
-
-.nav {
-  text-align: center;
+.icon:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
 }
 
 /* -------------------------------------------------------------------- */
@@ -182,9 +186,6 @@ ul {
 /* -------------------------------------------------------------------- */
 
 .login-btn {
-  display: inline-block;
-  vertical-align: middle;
-
   padding: 8px 18px;
   background-color: var(--primary-color);
   color: #fff;
@@ -204,26 +205,23 @@ ul {
 }
 
 /* -------------------------------------------------------------------- */
-
 .hero {
   background-color: var(--section-bg);
   padding: 40px 0;
-  font-size: 0;
 }
 
-.hero-content,
-.hero-image {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-content {
-  width: 50%;
+  flex: 1;
 }
 
 .hero-image {
-  width: 49%;
+  flex: 1;
   text-align: right;
 }
 
@@ -255,7 +253,6 @@ ul {
   color: var(--light-text);
   margin-bottom: 25px;
   max-width: 550px;
-  font-weight: 400;
 }
 
 .btn {
@@ -306,6 +303,60 @@ ul {
 .category-list li.active {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+/* ДОДАНО ФІЛЬТР В SIDEBAR */
+/* -------------------------------------------------------------------- */
+.price-range {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.range {
+  margin-left: 15px;
+  width: 90%;
+  accent-color: var(--primary-color);
+}
+
+.price-text {
+  margin-left: 15px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.price-text span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.filter-btn {
+  margin-left: 15px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SIZE */
+.size {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.size-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--light-text);
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 15px;
+}
+
+.size-list li:hover {
+  color: var(--primary-color);
 }
 
 /* -------------------------------------------------------------------- */
@@ -372,7 +423,8 @@ ul {
 
 .select-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .select-wrapper select {
