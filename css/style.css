@@ -275,6 +275,10 @@ ul {
   z-index: 20;
 }
 
+.mobile-login {
+  display: none;
+}
+
 /* Adaptive */
 /* -------------------------------------------------------------------- */
 
@@ -336,6 +340,20 @@ ul {
   .menu {
     display: none !important;
   }
+
+  .nav.active .mobile-login {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 540px) {
@@ -364,4 +382,133 @@ ul {
 
 .nav {
   z-index: 5;
+}
+
+/* LOGIN  */
+/* -------------------------------------------------------------------- */
+
+.register-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-page main {
+  position: relative;
+  width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.register-page main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.register-page .button-close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.register-page .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.register-page .title span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.register-page .form-description {
+  color: #666;
+  font-size: 13px;
+}
+
+.register-page input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.register-page .submit-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.register-page .action-description {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.register-page .action-description::before,
+.register-page .action-description::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.register-page .action-description::before {
+  left: 0;
+}
+
+.register-page .action-description::after {
+  right: 0;
+}
+
+.register-page .action-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  color: #727272;
+  font-weight: bold;
+
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.register-page .actions {
+  margin-bottom: 20px;
 }
