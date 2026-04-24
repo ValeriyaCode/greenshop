@@ -100,6 +100,11 @@
                     <span>Login</span>
                 </a>
 
+                <div class="burger">
+                    <svg class="icon">
+                        <use href="#burger"></use>
+                    </svg>
+                </div>
             </div>
 
         </div>
@@ -122,389 +127,47 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="images/hero/plant.png" alt="Plant">
+                    <picture>
+                        <source srcset="images/hero/plant.webp 1x, images/hero/plant@2x.webp 2x" type="image/webp">
+
+                        <img src="images/hero/plant.png" srcset="images/hero/plant.png 1x, images/hero/plant@2x.png 2x"
+                            alt="Plant">
+                    </picture>
                 </div>
 
             </div>
         </section>
-
-        <section class="products">
-            <div class="container">
-
-                <div class="products-wrapper">
-
-                    <!-- Left -->
-                    <aside class="sidebar">
-
-                        <div class="sidebar-top">
-                            <h3 class="sidebar-title">Categories</h3>
-
-                            <ul class="category-list">
-                                <li class="active">House Plants</li>
-                                <li>Potter Plants</li>
-                                <li>Seeds</li>
-                                <li>Small Plants</li>
-                                <li>Big Plants</li>
-                                <li>Succulents</li>
-                                <li>Terrariums</li>
-                                <li>Gardening</li>
-                                <li>Accessories</li>
-                            </ul>
-                        </div>
-
-                        <div class="price-range">
-                            <h3 class="sidebar-title">Price Range</h3>
-
-                            <input type="range" class="range">
-
-                            <p class="price-text">
-                                Price: <span>$39 - $1230</span>
-                            </p>
-
-                            <button class="filter-btn">Filter</button>
-                        </div>
-
-                        <div class="size">
-                            <h3 class="sidebar-title">Size</h3>
-
-                            <ul class="size-list">
-                                <li>Small <span>(119)</span></li>
-                                <li>Medium <span>(86)</span></li>
-                                <li>Large <span>(78)</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="sale-banner">
-                            <img src="images/products/sale.png" alt="Sale">
-                        </div>
-
-                    </aside>
-
-                    <!-- Right -->
-                    <div class="products-content">
-
-                        <div class="products-top">
-
-                            <div class="tabs">
-                                <button class="tab active">All Plants</button>
-                                <button class="tab">New Arrivals</button>
-                                <button class="tab">Sale</button>
-                            </div>
-
-                            <div class="sort">
-                                <span class="sort-label">Short by:</span>
-
-                                <div class="select-wrapper">
-                                    <select>
-                                        <option>Default sorting</option>
-                                        <option>Price</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="products-grid">
-
-                            <!-- Зі знижкою -->
-                            <div class="card">
-
-                                <div class="card-image">
-                                    <img src="images/products/cards/2.png" alt="">
-
-                                    <div class="card-actions">
-                                        <img src="images/products/actions_card/backet.png" alt="">
-                                        <img src="images/products/actions_card/like.png" alt="">
-                                        <img src="images/products/actions_card/search.png" alt="">
-                                    </div>
-
-                                    <div class="card-sale">13% OFF</div>
-                                </div>
-
-                                <p class="card-title">Angel Wing Begonia</p>
-
-                                <div class="card-price">
-                                    <span class="price">$169.00</span>
-                                    <span class="old-price">$229.00</span>
-                                </div>
-
-                            </div>
-
-                            <!-- Без знижки -->
-                            <div class="card">
-
-                                <div class="card-image">
-                                    <img src="images/products/cards/1.png" alt="">
-
-                                    <div class="card-actions">
-                                        <img src="images/products/actions_card/backet.png" alt="">
-                                        <img src="images/products/actions_card/like.png" alt="">
-                                        <img src="images/products/actions_card/search.png" alt="">
-                                    </div>
-                                </div>
-
-                                <p class="card-title">Barberton Daisy</p>
-
-                                <div class="card-price">
-                                    <span class="price">$119.00</span>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div class="pagination">
-                            <button class="page active">1</button>
-                            <button class="page">2</button>
-                            <button class="page">3</button>
-                            <button class="page">4</button>
-
-                            <button class="page next">
-                                <img src="images/products/right.png" alt="Next">
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="promo">
-            <div class="container promo-wrapper">
-
-                <div class="promo-card">
-                    <img src="images/blog/proposed/1.png" alt="">
-                    <div class="promo-content">
-                        <h3 class="promo-title">SUMMER CACTUS <br>& SUCCULENTS</h3>
-                        <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                        <a href="#" class="btn">Find More →</a>
-                    </div>
-                </div>
-
-                <div class="promo-card">
-                    <img src="images/blog/proposed/2.png" alt="">
-                    <div class="promo-content">
-                        <h3 class="promo-title">STYLING TRENDS <br>& MUCH MORE</h3>
-                        <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                        <a href="#" class="btn">Find More →</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="blog">
-            <div class="container">
-
-                <h2 class="blog-title">Our Blog Posts</h2>
-                <p class="blog-subtitle">
-                    We are an online plant shop offering a wide range of cheap and trendy plants.
-                </p>
-
-                <div class="blog-wrapper">
-
-                    <div class="blog-card">
-                        <img src="images/blog/posts/01.png" alt="">
-
-                        <div class="blog-content">
-                            <p class="blog-meta">September 12 | Read in 6 minutes</p>
-                            <h4 class="blog-name">Cactus & Succulent Care Tips</h4>
-                            <p class="blog-text">Cacti are succulents are easy care plants for any home or patio.</p>
-                            <a href="#">Read More →</a>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <img src="images/blog/posts/02.png" alt="">
-
-                        <div class="blog-content">
-                            <p class="blog-meta">September 13 | Read in 2 minutes</p>
-                            <h4 class="blog-name">Top 10 Succulents for Your Home</h4>
-                            <p class="blog-text">Best in hanging baskets. Prefers medium to high light.</p>
-                            <a href="#">Read More →</a>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <img src="images/blog/posts/03.png" alt="">
-
-                        <div class="blog-content">
-                            <p class="blog-meta">September 15 | Read in 3 minutes</p>
-                            <h4 class="blog-name">Cacti & Succulent Care Tips</h4>
-                            <p class="blog-text">Cacti and succulents thrive in containers and because most are...</p>
-                            <a href="#">Read More →</a>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <img src="images/blog/posts/04.png" alt="">
-
-                        <div class="blog-content">
-                            <p class="blog-meta">September 15 | Read in 2 minutes</p>
-                            <h4 class="blog-name">Best Houseplants Room By Room</h4>
-                            <p class="blog-text">The benefits of houseplants are endless. In addition to...</p>
-                            <a href="#">Read More →</a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="container features-wrapper">
-
-                <div class="features-items">
-
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="images/features/1.png" alt="Garden Care">
-                        </div>
-                        <h4>Garden Care</h4>
-                        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-                    </div>
-
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="images/features/2.png" alt="Plant Renovation">
-                        </div>
-                        <h4>Plant Renovation</h4>
-                        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-                    </div>
-
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="images/features/3.png" alt="Watering Garden">
-                        </div>
-                        <h4>Watering Garden</h4>
-                        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-                    </div>
-                </div>
-
-                <div class="newsletter">
-                    <h4 class="newsletter-title">
-                        Would you like to join newsletters?
-                    </h4>
-
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="enter your email address...">
-                        <button>Join</button>
-                    </div>
-
-                    <p class="newsletter-text">
-                        We usually post offers and challenges in newsletter. We're your online houseplant destination.
-                        We offer a wide range of houseplants and accessories shipped directly from our (green)house to
-                        yours!
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="contacts">
-            <div class="container contacts-wrapper">
-
-                <div class="contact-item logo">
-                    <img src="images/header/logo.png" alt="GreenShop">
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/contacts/location.png" alt="">
-                    <span>70 West Buckingham Ave. Farmingdale, NY 11735</span>
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/contacts/mail.png" alt="">
-                    <span>contact@greenshop.com</span>
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/contacts/phone.png" alt="">
-                    <span>+88 01911 717 490</span>
-                </div>
-
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="container footer-wrapper">
-
-                <div class="footer-col">
-                    <h4>My Account</h4>
-                    <a href="#">My Account</a>
-                    <a href="#">Our stores</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">Career</a>
-                    <a href="#">Specials</a>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Help & Guide</h4>
-                    <a href="#">Help Center</a>
-                    <a href="#">How to Buy</a>
-                    <a href="#">Shipping & Delivery</a>
-                    <a href="#">Product Policy</a>
-                    <a href="#">How to Return</a>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Categories</h4>
-                    <a href="#">House Plants</a>
-                    <a href="#">Potter Plants</a>
-                    <a href="#">Seeds</a>
-                    <a href="#">Small Plants</a>
-                    <a href="#">Accessories</a>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Social Media</h4>
-
-                    <div class="social">
-                        <a href="#"><img src="images/footer/Facebook.png" alt=""></a>
-                        <a href="#"><img src="images/footer/Instagram.png" alt=""></a>
-                        <a href="#"><img src="images/footer/Twitter.png" alt=""></a>
-                        <a href="#"><img src="images/footer/Linkidin.png" alt=""></a>
-                        <a href="#"><img src="images/footer/Youtube.png" alt=""></a>
-                    </div>
-
-                    <h4 class="pay-title">We accept</h4>
-
-                    <div class="payments">
-                        <img src="images/footer/Accept.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>
-                    © 2021 GreenShop. All Rights Reserved.
-                </p>
-            </div>
-
-        </footer>
     </main>
 
     <!-- SVG іконки -->
     <svg xmlns="http://www.w3.org/2000/svg">
-        <!-- SEARCH -->
         <symbol id="search" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" stroke="currentColor"
                 stroke-width="1.5" fill="none" />
         </symbol>
 
-        <!-- CART -->
         <symbol id="cart" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
                 d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"
                 stroke="currentColor" stroke-width="1.5" fill="none" />
         </symbol>
+
+        <symbol id="burger" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                stroke="currentColor" stroke-width="1.5" fill="none" />
+        </symbol>
     </svg>
 
+    <!-- Бургер (відкрити та закрити) -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
